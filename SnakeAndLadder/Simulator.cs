@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace SnakeAndLadder
 {
-    internal class Simulator
+    public class Simulator
     {
+        //UC1
+        public void StartGame()
+        {
+            Console.WriteLine("At Start position of Player1 is Zero");
+        }
     }
 }
