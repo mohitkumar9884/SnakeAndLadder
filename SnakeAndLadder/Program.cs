@@ -7,9 +7,13 @@
             Console.WriteLine("Welcome To Snake & Ladder Simulator");
             Simulator simulator = new Simulator();
             simulator.StartGame();
+            simulator.RollingDie();
+           
+            
             
 
-            
+
+
         }
     }
 }
