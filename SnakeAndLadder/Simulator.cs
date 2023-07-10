@@ -78,13 +78,11 @@ namespace SnakeAndLadder
                         break;
                 }
 
-                if (playerPosition > WINNING_POSITION)
-                    playerPosition = playerPosition - dieRoll;
-
                 Console.WriteLine("Current position of Player 1: {0}", playerPosition);
             }
 
             Console.WriteLine("Player1 wins!");
+            
         }
 
             int RollDie()
