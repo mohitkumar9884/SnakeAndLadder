@@ -14,6 +14,7 @@ namespace SnakeAndLadder
         //int result2 = 0;
         const int WINNING_POSITION = 100;
         int playerPosition = 0;
+        int dieRollCount = 0;
         
 
         //UC1
@@ -52,7 +53,7 @@ namespace SnakeAndLadder
                 Console.WriteLine("(NO_PLAY) Player1 stay in the same position.");
             }  
         }*/
-        //UC4 & UC5
+        //UC4 & UC5 & UC6
         public void WinningPosition()
         {
             
@@ -60,6 +61,8 @@ namespace SnakeAndLadder
             {
                 int dieRoll = RollDie();
                 int option = CheckOption();
+
+                dieRollCount++;// Increment Die Roll Count
 
                 switch (option)
                 {
@@ -77,6 +80,7 @@ namespace SnakeAndLadder
                             playerPosition = 0;
                         break;
                 }
+                
                 if (playerPosition > WINNING_POSITION)
                     playerPosition = playerPosition - dieRoll;
 
@@ -84,6 +88,7 @@ namespace SnakeAndLadder
             }
 
             Console.WriteLine("Player1 wins!");
+            Console.WriteLine("Total die roll: {0}", dieRollCount);
             
         }
 
