@@ -15,7 +15,7 @@
             //UC3
             //simulator.CheckOption();
 
-            //UC4
+            //UC4 & UC5
             simulator.WinningPosition();
         }
     }

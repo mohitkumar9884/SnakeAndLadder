@@ -52,7 +52,7 @@ namespace SnakeAndLadder
                 Console.WriteLine("(NO_PLAY) Player1 stay in the same position.");
             }  
         }*/
-        //UC4
+        //UC4 & UC5
         public void WinningPosition()
         {
             
@@ -77,6 +77,8 @@ namespace SnakeAndLadder
                             playerPosition = 0;
                         break;
                 }
+                if (playerPosition > WINNING_POSITION)
+                    playerPosition = playerPosition - dieRoll;
 
                 Console.WriteLine("Current position of Player 1: {0}", playerPosition);
             }
