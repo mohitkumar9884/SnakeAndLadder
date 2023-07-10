@@ -8,12 +8,15 @@
             Simulator simulator = new Simulator();
            // UC1
             simulator.StartGame();
+
             //UC2
-            simulator.RollingDie();
-  
+            //simulator.RollingDie();
+
             //UC3
-            simulator.CheckOption();
-            
+            //simulator.CheckOption();
+
+            //UC4
+            simulator.WinningPosition();
         }
     }
 }
